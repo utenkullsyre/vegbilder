@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" />
+  <title>Load a basic WebMap | Sample | ArcGIS API for JavaScript 4.16</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" />
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #info {
+      margin: 0px;
+      padding: 0px;
+      box-shadow: none !important;
+      background-color: transparent;
+    }
+
+    .card h2,
+    #dialog-title {
+      color: #ed9300;
+    }
+
+    #test {
+      max-height: 95%;
+      margin: 5px 10px;
+      overflow: hidden;
+    }
+
+    .knapp {
+      background-color: #ed9300;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    .knapp:hover {
+      background-color: #facd84;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    .bilder {
+      margin: 80px !important;
+      max-height: 80vh !important;
+    }
+
+    .popup-init,
+    .klikkbart {
+      cursor: pointer;
+    }
+
+    #bilde-viewer {
+      box-shadow: 5px 10px 8px #888888;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
+
+  <script>
+    window.dojoConfig = {
+      packages: [{
+        name: "vue",
+        location: "https://unpkg.com/vue/dist/",
+        main: "vue",
+      }, ],
+    };
+  </script>
+
+  <script src="https://js.arcgis.com/4.16/"></script>
+
+  <script>
+    function standby() {
+      document.getElementById("foo").src =
+        "https://magazine.bellesdemeures.com/sites/default/files/styles/manual_crop_735x412/public/article/image/magritte_tableau_le_fils_de_lhomme_0.jpg?itok=3cExuGeN";
+    }
+
+    require([
+      "esri/views/MapView",
+      "esri/WebMap",
+      "esri/request",
+      "esri/Graphic",
+      "esri/widgets/Search",
+      "vue",
+    ], function (MapView, WebMap, esriRequest, Graphic, Search, Vue) {
+      /************************************************************
+       * Creates a new WebMap instance. A WebMap must reference
+       * a PortalItem ID that represents a WebMap saved to
+       * arcgis.com or an on-premise portal.
+       *
+       * To load a WebMap from an on-premise portal, set the portal
+       * url with esriConfig.portalUrl.
+       ************************************************************/
+      var webmap = new WebMap({
+        portalItem: {
+          // autocasts as new PortalItem()
+          id: "2b2e7fa91b834f368b103a4efacec4dd",
+        },
+      });
+
+      /************************************************************
+       * Set the WebMap instance to the map property in a MapView.
+       ************************************************************/
+      var view = new MapView({
+        map: webmap,
+        container: "viewDiv",
+        spatialReference: {
+          wkid: 25833,
+        },
+      });
+
+      // Create a Vue component
+      Vue.component("camera-info", {
+        props: ["url"],
+        data: function () {
+          return {
+            toggle: "no",
+          }
+        },
+
+        template: [
+          '<div id="bilde-viewer" class="card large" v-if="bilde">',
+          '<div class="row">',
+          '<div class="col-sm-12 col-md-12 col-lg-12">',
+          "<h2>{{vegnr}}</h2>",
+          "<p>Dato: {{dato}}</p>",
+          '<a :href="url" target="_blank" v-if="bilde"><img id="foo" :src="bilde" alt="" onerror="standby()"></a>',
+          '<div class="spinner" v-else></div>',
+          "<p></p>",
+          '<button class="knapp" @click="toggleStortbilde()">Stort bilde</button>',
+          '<input type="checkbox" id="modal-control" class="modal" v-model="toggle" true-value="yes" false-value="no">',
+          '<div role="dialog" aria-labelledby="dialog-title">',
+          '<div id="test" class="card fluid">',
+          '<label for="modal-control" class="modal-close" ></label>',
+          '<h3 class="section" id="dialog-title">{{vegnr}} <i>({{dato}})</i></h3>',
+          "<div>",
+          '<img class="section" v-if="bilde" :src="bilde" alt="" onerror="standby()">',
+          "</div>",
+          '<p class="section"></p>',
+          "</div>",
+          "</div>",
+          "</div>",
+          "</div>",
+          "</div>",
+        ].join(""),
+
+        computed: {
+          bilde: function () {
+            try {
+              return this.url.features[0].properties.URL;
+            } catch (error) {
+              return "";
+            }
+          },
+          vegnr: function () {
+            try {
+              let data = this.url;
+              return (
+                data.features[0].properties.VEGKATEGORI +
+                data.features[0].properties.VEGSTATUS +
+                data.features[0].properties.VEGNUMMER +
+                " S" +
+                data.features[0].properties.STREKNING +
+                " D" +
+                data.features[0].properties.DELSTREKNING +
+                " m" +
+                Math.round(data.features[0].properties.METER)
+              );
+            } catch (error) {
+              console.log(error, "Feilmelding");
+              return "";
+            }
+          },
+
+          dato: function () {
+            try {
+              let dato = new Date(this.url.features[0].properties.TIDSPUNKT);
+              let dag =
+                ("0" + dato.getDate()).slice(-2) +
+                "/" +
+                ("0" + (dato.getMonth() + 1)).slice(-2) +
+                "/" +
+                dato.getFullYear();
+              let tidspunkt =
+                ("0" + dato.getUTCHours()).slice(-2) +
+                ":" +
+                ("0" + dato.getUTCMinutes()).slice(-2);
+
+              return dag + " - " + tidspunkt;
+            } catch (error) {
+              console.log(error, "Feilmelding");
+              return "";
+            }
+          },
+          // test: function () {
+          //   return this.url.substr(this.url.bilde.length - 8)
+          // },
+          // vegnr: function () {
+          //   try {
+          //     let nr = this.vegnummer
+          //     console.log(nr, "Vegnummer computed");
+          //     return this.objekter.features[0].properties.VEGKATEGORI + this.objekter.features[0].properties.VEGSTATUS + this.objekter.features[0].properties.VEGNUMMER
+          //   } catch (error) {
+          //     console.log(error);
+          //     return "Finner ikke vegnummer"
+          //   }
+          // }
+        },
+
+        methods: {
+          toggleStortbilde() {
+            this.toggle === "yes" ? this.toggle = "no" : this.toggle = "yes";
+          }
+        },
+
+        mounted() {
+          console.log(this, "Vue komponent");
+        },
+      });
+
+      function extentCalc(kartPkt, d) {
+        let x = kartPkt.x;
+        let y = kartPkt.y;
+
+        return [x - d, y - d, x + d, y + d];
+      }
+
+      function setMarker(kartpkt, retning) {
+        // First create a point geometry (this is the location of the Titanic)
+        var point = {
+          type: "point", // autocasts as new Point()
+          x: kartpkt.x,
+          y: kartpkt.y,
+          spatialReference: {
+            wkid: 25833,
+          },
+        };
+
+        // Create a symbol for drawing the point
+        var markerSymbol = {
+          type: "picture-marker",
+          url: "https://kart.skoiddlos.com/symbologi/pil.png",
+          width: 50,
+          height: 50,
+          angle: retning,
+        };
+
+        // Create a graphic and add the geometry and symbol to it
+        var pointGraphic = new Graphic({
+          geometry: point,
+          symbol: markerSymbol,
+        });
+
+        return pointGraphic;
+      }
+
+      console.log(view, "Kartet");
+
+      view.when(function () {
+        const info = new Vue({
+          el: "#info",
+          data: {
+            url: {},
+          },
+          methods: {
+            hentBilde(url) {
+              //Testlogging
+              console.log(this, "Er dette Vue?");
+
+              fetch(url)
+                .then((response) => {
+                  // The response is a Response instance.
+                  // You parse the data into a useable format using `.json()`
+                  return response.json();
+                })
+                .then((response) => {
+                  console.log(response.features);
+                  // `data` is the parsed version of the JSON returned from the above endpoint.
+                  let data = response;
+
+                  if (data.features.length !== 0) {
+                    let pkt = data.features[0].geometry.coordinates;
+                    let marker = setMarker({
+                        x: pkt[0],
+                        y: pkt[1],
+                      },
+                      data.features[0].properties.RETNING
+                    );
+                    console.log(marker, "Markør");
+                    view.graphics.add(marker);
+                    console.log(
+                      data.features[0].properties.URL,
+                      "Url til vegbildet"
+                    );
+
+                    let vegnr =
+                      data.features[0].properties.VEGKATEGORI +
+                      data.features[0].properties.VEGSTATUS +
+                      data.features[0].properties.VEGNUMMER;
+
+                    //Lagrer verdier
+                    this.url = data;
+                    // this.url.vegnummer = vegnr
+                    // info.url.bilde = data.features[0].properties.URL
+
+                    // console.log(info, "Vue etter lagring");
+
+                    // window.open(data.features[0].properties.URL)
+                  } else {
+                    info.url = "";
+                  }
+                });
+            },
+          },
+        });
+
+        const searchWidget = new Search({
+          view: view,
+        });
+
+        view.ui.add(searchWidget, {
+          position: "top-right",
+          index: 2,
+        });
+
+        console.log(info, "Vue komponent");
+
+        view.ui.add(info.$el, "bottom-right");
+        // watchUtils.watch(view, "center", function () {
+        // console.log(view.zoom, "Zoom");
+
+        // info.zoom = view.zoom;
+        0; // });
+
+        view.on("click", function (event) {
+          view.graphics.removeAll();
+          let extent;
+          try {
+            extent = extentCalc(event.mapPoint, 2);
+          } catch (error) {
+            console.log(error);
+          }
+
+          let url =
+            "https://www.vegvesen.no/kart/ogc/vegbilder_1_0/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=vegbilder_1_0:Vegbilder_2020&STARTINDEX=0&COUNT=10&SRSNAME=urn:ogc:def:crs:EPSG::25833&BBOX=" +
+            extent.join(",") +
+            ",urn:ogc:def:crs:EPSG::25833&outputFormat=application/json";
+
+          info.hentBilde(url);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="info" class="esri-widget">
+    <camera-info :url="url"> </camera-info>
+  </div>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
