@@ -161,7 +161,7 @@
           '<div class="col-sm-12 col-md-12 col-lg-12">',
           "<h2>{{vegnr}}</h2>",
           "<p>Dato: {{dato}}</p>",
-          '<a :href="url" target="_blank" v-if="bilde"><img id="foo" :src="bilde" alt="" onerror="standby()"></a>',
+          '<img id="foo" :src="bilde" alt="" onerror="standby()">',
           '<div class="spinner" v-if="!bilde"></div>',
           "<p></p>",
           '<button class="knapp" @click="toggleStortbilde()">Stort bilde</button>',
@@ -276,8 +276,8 @@
         // Create a symbol for drawing the point
         var markerSymbol = {
           type: "picture-marker",
-          url: "https://kart.skoiddlos.com/symbologi/pil.png",
-          width: 50,
+          url: "https://kart.skoiddlos.com/symbologi/bil.png",
+          width: 25,
           height: 50,
           angle: retning,
         };
