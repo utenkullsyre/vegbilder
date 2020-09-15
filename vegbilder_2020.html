@@ -135,6 +135,9 @@
         },
       });
 
+      //TODO: Fjern alle consol-meldinger som ikke er knyttet til feilmelding
+      //TODO: Fjern autoload bilde når hovedbilde ikke blir hentet inn
+
       /************************************************************
        * Set the WebMap instance to the map property in a MapView.
        ************************************************************/
@@ -276,8 +279,8 @@
         // Create a symbol for drawing the point
         var markerSymbol = {
           type: "picture-marker",
-          url: "https://kart.skoiddlos.com/symbologi/bil.png",
-          width: 25,
+          url: "https://kart.skoiddlos.com/symbologi/pil.png",
+          width: 50,
           height: 50,
           angle: retning,
         };
@@ -369,19 +372,44 @@
         console.log(info, "Vue komponent");
 
         view.ui.add(info.$el, "bottom-right");
-        // watchUtils.watch(view, "center", function () {
-        // console.log(view.zoom, "Zoom");
-
-        // info.zoom = view.zoom;
-        0; // });
 
         view.on("click", function (event) {
+
           view.graphics.removeAll();
+
+          const mapScale = view.scale
+
           let extent;
+          let klikkAreal;
+
+          //Switch for å bestemme beste klikkAreal
+          switch (true) {
+            case mapScale < 4999:
+              klikkAreal = 2
+              break;
+
+            case mapScale < 11000:
+            klikkAreal = 6
+            break;
+          
+            
+            case mapScale < 25000:
+            klikkAreal = 15
+            break;
+            
+            case mapScale < 200000:
+            klikkAreal = 30
+            break;
+          
+            default:
+              break;
+          }
+          
+          
           try {
-            extent = extentCalc(event.mapPoint, 2);
+            extent = extentCalc(event.mapPoint, klikkAreal);
           } catch (error) {
-            console.log(error);
+            console.log(error), "Feilmelding under beregning av klikkpkt extent";
           }
 
           let url =
