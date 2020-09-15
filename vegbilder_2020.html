@@ -5,7 +5,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" />
   <title>Load a basic WebMap | Sample | ArcGIS API for JavaScript 4.16</title>
+  
+  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" />
+  
+  
 
   <style>
     html,
@@ -90,27 +95,31 @@
       box-shadow: 5px 10px 8px #888888;
 	  max-width: 650px !important;
     }
+
+    #viewerImage {
+      width:max-content;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.6.2/viewer.min.css" integrity="sha512-8ZhoOdKiZafVRcEa08KcidOK/B85ByNOaWUiBXRi8kZ3pWUWJsBuY8sGBK6hZPWZhH35uXtFyRH/5DLTo2u6EQ==" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
-
+  
   <script>
     window.dojoConfig = {
       packages: [{
         name: "vue",
         location: "https://unpkg.com/vue/dist/",
         main: "vue",
-      }, ],
+      },
+     ],
     };
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.6.2/viewer.min.js" integrity="sha512-VzJLwaOOYyQemqxRypvwosaCDSQzOGqmBFRrKuoOv7rF2DZPlTaamK1zadh7i2FRmmpdUPAE/VBkCwq2HKPSEQ==" crossorigin="anonymous"></script>
   <script src="https://js.arcgis.com/4.16/"></script>
+  
 
   <script>
-    function standby() {
-      document.getElementById("foo").src =
-        "https://magazine.bellesdemeures.com/sites/default/files/styles/manual_crop_735x412/public/article/image/magritte_tableau_le_fils_de_lhomme_0.jpg?itok=3cExuGeN";
-    }
 
     require([
       "esri/views/MapView",
@@ -137,6 +146,7 @@
 
       //TODO: Fjern alle consol-meldinger som ikke er knyttet til feilmelding
       //TODO: Fjern autoload bilde når hovedbilde ikke blir hentet inn
+    
 
       /************************************************************
        * Set the WebMap instance to the map property in a MapView.
@@ -155,6 +165,7 @@
         data: function () {
           return {
             toggle: "no",
+            bildeviser: null,
           }
         },
 
@@ -164,21 +175,10 @@
           '<div class="col-sm-12 col-md-12 col-lg-12">',
           "<h2>{{vegnr}}</h2>",
           "<p>Dato: {{dato}}</p>",
-          '<img id="foo" :src="bilde" alt="" onerror="standby()">',
+          '<img id="viewerImage" :src="bilde" alt="" >',
           '<div class="spinner" v-if="!bilde"></div>',
           "<p></p>",
           '<button class="knapp" @click="toggleStortbilde()">Stort bilde</button>',
-          '<input type="checkbox" id="modal-control" class="modal" v-model="toggle" true-value="yes" false-value="no">',
-          '<div role="dialog" aria-labelledby="dialog-title">',
-          '<div id="test" class="card fluid">',
-          '<label for="modal-control" class="modal-close" ></label>',
-          '<h3 class="section" id="dialog-title">{{vegnr}} <i>({{dato}})</i></h3>',
-          "<div>",
-          '<img class="section" :src="bilde" alt="" onerror="standby()">',
-          "</div>",
-          '<p class="section"></p>',
-          "</div>",
-          "</div>",
           "</div>",
           "</div>",
           "</div>",
@@ -236,11 +236,32 @@
 
         methods: {
           toggleStortbilde() {
-            this.toggle === "yes" ? this.toggle = "no" : this.toggle = "yes";
-          }
+            // this.toggle === "yes" ? this.toggle = "no" : this.toggle = "yes";
+            console.log();
+
+              if (!this.bildeviser) {                
+                let viewer = new Viewer(document.getElementById('viewerImage'), {
+                    inline: false,
+                    viewed() {
+                      viewer.zoomTo(0.5);
+                    },
+                  });
+
+                  viewer.show()
+
+                  this.bildeviser = viewer
+              } else {
+                console.log(this.bildeviser);
+                this.bildeviser.url = this.bilde
+                this.bildeviser.show()
+                
+              }
         },
+      },
 
         mounted() {
+          const bilde = document.getElementById('viewerImage');
+          console.log(bilde, "Created");
         },
       });
 
@@ -404,7 +425,8 @@
 
 <body>
   <div id="info" class="esri-widget">
-    <camera-info :url="url"> </camera-info>
+    <camera-info :url="url">
+    </camera-info>
   </div>
   <div id="viewDiv"></div>
 </body>
