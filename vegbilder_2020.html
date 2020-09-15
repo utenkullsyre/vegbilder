@@ -88,6 +88,7 @@
 
     #bilde-viewer {
       box-shadow: 5px 10px 8px #888888;
+	  max-width: 650px !important;
     }
   </style>
 
@@ -161,7 +162,7 @@
           "<h2>{{vegnr}}</h2>",
           "<p>Dato: {{dato}}</p>",
           '<a :href="url" target="_blank" v-if="bilde"><img id="foo" :src="bilde" alt="" onerror="standby()"></a>',
-          '<div class="spinner" v-else></div>',
+          '<div class="spinner" v-if="!bilde"></div>',
           "<p></p>",
           '<button class="knapp" @click="toggleStortbilde()">Stort bilde</button>',
           '<input type="checkbox" id="modal-control" class="modal" v-model="toggle" true-value="yes" false-value="no">',
@@ -170,7 +171,7 @@
           '<label for="modal-control" class="modal-close" ></label>',
           '<h3 class="section" id="dialog-title">{{vegnr}} <i>({{dato}})</i></h3>',
           "<div>",
-          '<img class="section" v-if="bilde" :src="bilde" alt="" onerror="standby()">',
+          '<img class="section" :src="bilde" alt="" onerror="standby()">',
           "</div>",
           '<p class="section"></p>',
           "</div>",
@@ -291,6 +292,12 @@
       }
 
       console.log(view, "Kartet");
+
+      view.ui.remove("attribution");
+
+      view.constraints = {
+        rotationEnabled: false,
+      };
 
       view.when(function () {
         const info = new Vue({
