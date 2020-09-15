@@ -207,7 +207,7 @@
                 Math.round(data.features[0].properties.METER)
               );
             } catch (error) {
-              console.log(error, "Feilmelding");
+              console.log(error, "Feilmelding under lagring av vegnr i vue-komponent");
               return "";
             }
           },
@@ -228,23 +228,10 @@
 
               return dag + " - " + tidspunkt;
             } catch (error) {
-              console.log(error, "Feilmelding");
+              console.log(error, "Feilmelding under lagring av dato i vue-komponent");
               return "";
             }
           },
-          // test: function () {
-          //   return this.url.substr(this.url.bilde.length - 8)
-          // },
-          // vegnr: function () {
-          //   try {
-          //     let nr = this.vegnummer
-          //     console.log(nr, "Vegnummer computed");
-          //     return this.objekter.features[0].properties.VEGKATEGORI + this.objekter.features[0].properties.VEGSTATUS + this.objekter.features[0].properties.VEGNUMMER
-          //   } catch (error) {
-          //     console.log(error);
-          //     return "Finner ikke vegnummer"
-          //   }
-          // }
         },
 
         methods: {
@@ -254,7 +241,6 @@
         },
 
         mounted() {
-          console.log(this, "Vue komponent");
         },
       });
 
@@ -294,7 +280,7 @@
         return pointGraphic;
       }
 
-      console.log(view, "Kartet");
+      //console.log(view, "Kartet");
 
       view.ui.remove("attribution");
 
@@ -310,8 +296,6 @@
           },
           methods: {
             hentBilde(url) {
-              //Testlogging
-              console.log(this, "Er dette Vue?");
 
               fetch(url)
                 .then((response) => {
@@ -320,7 +304,7 @@
                   return response.json();
                 })
                 .then((response) => {
-                  console.log(response.features);
+                  //console.log(response.features);
                   // `data` is the parsed version of the JSON returned from the above endpoint.
                   let data = response;
 
@@ -332,12 +316,11 @@
                       },
                       data.features[0].properties.RETNING
                     );
-                    console.log(marker, "Markør");
                     view.graphics.add(marker);
-                    console.log(
-                      data.features[0].properties.URL,
-                      "Url til vegbildet"
-                    );
+                    // console.log(
+                    //   data.features[0].properties.URL,
+                    //   "Url til vegbildet"
+                    // );
 
                     let vegnr =
                       data.features[0].properties.VEGKATEGORI +
@@ -346,12 +329,7 @@
 
                     //Lagrer verdier
                     this.url = data;
-                    // this.url.vegnummer = vegnr
-                    // info.url.bilde = data.features[0].properties.URL
 
-                    // console.log(info, "Vue etter lagring");
-
-                    // window.open(data.features[0].properties.URL)
                   } else {
                     info.url = "";
                   }
@@ -369,7 +347,7 @@
           index: 2,
         });
 
-        console.log(info, "Vue komponent");
+        //console.log(info, "Vue komponent");
 
         view.ui.add(info.$el, "bottom-right");
 
