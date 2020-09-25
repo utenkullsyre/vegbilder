@@ -1,0 +1,26 @@
+<div id="bilde-viewer" class="card large" v-if="bilde">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="vegnummer">
+        <h2 id="vegnr">{{vegnr}}</h2><button class="btn" type="button" @click="copyClipboard">
+          <img :class="{clippy: animated}" src="https://clipboardjs.com/assets/images/clippy.svg" width="20"
+            alt="Copy to clipboard" @animationend="animated = false">
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2 @click="bildeAktiv=true"> Test1</h2><h2 @click="bildeAktiv=false">test2</h2>
+    </div>
+    <div v-if="bildeAktiv">
+      <p>Dato: {{dato}}</p>
+      <a :href="url" target="_blank" v-if="bilde"><img id="viewerImage" :src="bilde" alt="" onerror="standby()"></a>
+      <div class="spinner" v-if="bilde=\\"></div>
+      <p></p>
+      <button class="knapp" @click="toggleStortbilde()">Stort bilde</button>
+    </div>
+    <div v-else>
+        <h2>Test</h2>
+    </div>
+  </div>
+</div>
+</div>
