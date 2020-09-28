@@ -1,26 +1,649 @@
-<div id="bilde-viewer" class="card large" v-if="bilde">
-  <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <div class="vegnummer">
-        <h2 id="vegnr">{{vegnr}}</h2><button class="btn" type="button" @click="copyClipboard">
-          <img :class="{clippy: animated}" src="https://clipboardjs.com/assets/images/clippy.svg" width="20"
-            alt="Copy to clipboard" @animationend="animated = false">
-        </button>
-      </div>
-    </div>
-    <div>
-      <h2 @click="bildeAktiv=true"> Test1</h2><h2 @click="bildeAktiv=false">test2</h2>
-    </div>
-    <div v-if="bildeAktiv">
-      <p>Dato: {{dato}}</p>
-      <a :href="url" target="_blank" v-if="bilde"><img id="viewerImage" :src="bilde" alt="" onerror="standby()"></a>
-      <div class="spinner" v-if="bilde=\\"></div>
-      <p></p>
-      <button class="knapp" @click="toggleStortbilde()">Stort bilde</button>
-    </div>
-    <div v-else>
-        <h2>Test</h2>
-    </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" />
+  <title>Load a basic WebMap | Sample | ArcGIS API for JavaScript 4.16</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" />
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    :focus {
+      outline: none !important;
+    }
+
+    #info {
+      margin: 0px;
+      padding: 0px;
+      box-shadow: none !important;
+      background-color: transparent;
+    }
+
+    .card h2,
+    #dialog-title {
+      color: #ed9300;
+    }
+
+    #test {
+      max-height: 95%;
+      margin: 5px 10px;
+      overflow: hidden;
+    }
+
+    .knapp {
+      background-color: #ed9300;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    .knapp:hover {
+      background-color: #facd84;
+    }
+
+    .btn,
+    .btn:hover {
+      background-color: rgba(0, 0, 255, 0) !important
+    }
+
+    .aktivValg {
+      text-decoration: underline;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    .bilder {
+      margin: 80px !important;
+      max-height: 80vh !important;
+    }
+
+    .top-section {
+      position: relative;
+      }
+
+      .stack {
+        top:0px;
+      }
+
+    .popup-init,
+    .klikkbart {
+      cursor: pointer;
+    }
+
+    .valgmeny {
+      display: flex;
+      flex: row nowrap;
+      width: 100%;
+      border-bottom: #888888 2px solid;
+    }
+
+    .valgmeny h4 {
+      cursor: pointer;
+    }
+
+    #bilde-viewer {
+      box-shadow: 5px 10px 8px #888888;
+      max-width: 650px !important;
+    }
+
+    #viewerImage {
+      width: max-content;
+    }
+
+    .clippy {
+      box-shadow: 0 0 0 0 rgba(255, 150, 0, 1);
+      transform: scale(1);
+      animation-name: pulse;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
+
+    .loader,
+    .loader:after {
+      border-radius: 50%;
+      width: 10em;
+      height: 10em;
+    }
+
+    .loader {
+      position: absolute;
+      left: 42%;
+      top: 35%;
+      height:100px;
+      width:100px;
+      margin:0px auto;
+      -webkit-animation: rotation .6s infinite linear;
+      -moz-animation: rotation .6s infinite linear;
+      -o-animation: rotation .6s infinite linear;
+      animation: rotation .6s infinite linear;
+      border-left:8px solid rgba(255, 197, 122, 0.15);
+      border-right:8px solid  rgba(255, 197, 122, 0.15);
+      border-bottom:8px solid  rgba(255, 197, 122, 0.15);
+      border-top:8px solid rgba(255, 179, 37, 0.8);
+      border-radius:100%;
+    }
+
+    @-webkit-keyframes rotation {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(359deg);}
+    }
+    @-moz-keyframes rotation {
+      from {-moz-transform: rotate(0deg);}
+      to {-moz-transform: rotate(359deg);}
+    }
+    @-o-keyframes rotation {
+      from {-o-transform: rotate(0deg);}
+      to {-o-transform: rotate(359deg);}
+    }
+    @keyframes rotation {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(359deg);}
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 150, 0, 0.7);
+      }
+
+      70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 150, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 150, 0, 0);
+      }
+    }
+
+    .vegnummer {
+      display: flex;
+      justify-content: start;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.6.2/viewer.min.css"
+    integrity="sha512-8ZhoOdKiZafVRcEa08KcidOK/B85ByNOaWUiBXRi8kZ3pWUWJsBuY8sGBK6hZPWZhH35uXtFyRH/5DLTo2u6EQ=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
+
+  <script>
+    window.dojoConfig = {
+      packages: [{
+        name: "vue",
+        location: "https://unpkg.com/vue/dist/",
+        main: "vue",
+      }, ],
+    };
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.6.2/viewer.min.js"
+    integrity="sha512-VzJLwaOOYyQemqxRypvwosaCDSQzOGqmBFRrKuoOv7rF2DZPlTaamK1zadh7i2FRmmpdUPAE/VBkCwq2HKPSEQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+  <script src="https://js.arcgis.com/4.16/"></script>
+
+
+  <script>
+    function standby() {
+      document.getElementById("viewerImage").src =
+        "https://magazine.bellesdemeures.com/sites/default/files/styles/manual_crop_735x412/public/article/image/magritte_tableau_le_fils_de_lhomme_0.jpg?itok=3cExuGeN";
+    }
+
+    require([
+      "esri/views/MapView",
+      "esri/WebMap",
+      "esri/request",
+      "esri/Graphic",
+      "esri/widgets/Search",
+      "vue",
+    ], function (MapView, WebMap, esriRequest, Graphic, Search, Vue) {
+      /*********************'***************************************
+       * Creates a new WebMap instance. A WebMap must reference
+       * a PortalItem ID that represents a WebMap saved to
+       * arcgis.com or an on-premise portal.
+       *
+       * To load a WebMap from an on-premise portal, set the portal
+       * url with esriConfig.portalUrl.
+       ************************************************************/
+      var webmap = new WebMap({
+        portalItem: {
+          // autocasts as new PortalItem()
+          id: "2b2e7fa91b834f368b103a4efacec4dd",
+        },
+      });
+
+      //TODO: Fjern alle consol-meldinger som ikke er knyttet til feilmelding
+      //TODO: Fjern autoload bilde når hovedbilde ikke blir hentet inn
+
+      /************************************************************
+       * Set the WebMap instance to the map property in a MapView.
+       ************************************************************/
+      var view = new MapView({
+        map: webmap,
+        container: "viewDiv",
+        spatialReference: {
+          wkid: 25833,
+        },
+      });
+
+      // Create a Vue component
+      Vue.component("camera-info", {
+        props: ["url"],
+        data: function () {
+          return {
+            toggle: "no",
+            bildeviser: null,
+            bildeLastet: false,
+            animated: false,
+            bildeAktiv: true,
+            vinduDim: {
+              height: "300px",
+              width: "650px",
+            }
+          };
+        },
+
+        template: [
+          '<div id="bilde-viewer" class="card large" v-if="bilde">',
+          '  <div class="row">',
+          '    <div class="col-sm-12 col-md-12 col-lg-12">',
+          '      <div class="vegnummer">',
+          '        <h2 id="vegnr">{{vegnr}}</h2><button class="btn" type="button" @click="copyClipboard">',
+          '          <img :class="{clippy: animated}" src="https://clipboardjs.com/assets/images/clippy.svg" width="20"',
+          '            alt="Copy to clipboard" @animationend="animated = false">',
+          '        </button>',
+          '      </div>',
+          '    </div>',
+          '    <div class="valgmeny">',
+          '      <h4 :class="{aktivValg: bildeAktiv}" @click="bildeAktiv=true"> Vegbilde</h4><h4 :class="{aktivValg: !bildeAktiv}" @click="velgerKat" >Informasjon</h4>',
+          '    </div>',
+          '    <div id="vegbilde" v-if="bildeAktiv">',
+          '      <p>Dato: {{dato}}</p>',
+          '<div class="top-section">',
+          '	<img v-if="bilde" id="viewerImage" :src="bilde" alt="" @load="bildeLastet=true" onerror="standby()">',
+          '	<div class="stack lag2 loader" v-if="!bildeLastet"></div>	',
+          '</div>',
+          '      <p></p>',
+          '      <button class="knapp" @click="toggleStortbilde()">Stort bilde</button>',
+          '    </div>',
+          '    <div id="veginfo" :style="vinduDim" v-else>',
+
+          '        <a :href="vegkartUrl" target="#"><h3>Lenke til vegkart</h3></a>',
+          '        <h3>Enda mer metadata</h3>',
+          '        <h3>Et eller annja</h3>',
+          '    </div>',
+          '  </div>',
+          '</div>',
+          '</div>',
+        ].join(""),
+
+        computed: {
+          bilde: function () {
+            try {
+              return this.url.features[0].properties.URL
+            } catch (error) {
+              return "";
+            }
+          },
+
+          vegnr: function () {
+            try {
+              let data = this.url;
+              return (
+                data.features[0].properties.VEGKATEGORI +
+                data.features[0].properties.VEGSTATUS +
+                data.features[0].properties.VEGNUMMER +
+                " S" +
+                data.features[0].properties.STREKNING +
+                " D" +
+                data.features[0].properties.DELSTREKNING +
+                " m" +
+                Math.round(data.features[0].properties.METER)
+              );
+            } catch (error) {
+              console.log(
+                error,
+                "Feilmelding under lagring av vegnr i vue-komponent"
+              );
+              return "";
+            }
+          },
+
+          dato: function () {
+            try {
+              let dato = new Date(this.url.features[0].properties.TIDSPUNKT);
+              let dag =
+                ("0" + dato.getDate()).slice(-2) +
+                "/" +
+                ("0" + (dato.getMonth() + 1)).slice(-2) +
+                "/" +
+                dato.getFullYear();
+              let tidspunkt =
+                ("0" + dato.getUTCHours()).slice(-2) +
+                ":" +
+                ("0" + dato.getUTCMinutes()).slice(-2);
+
+              return dag + " - " + tidspunkt;
+            } catch (error) {
+              console.log(
+                error,
+                "Feilmelding under lagring av dato i vue-komponent"
+              );
+              return "";
+            }
+          },
+
+          vegkartUrl: function () {
+            try {
+              let x = this.url.features[0].geometry.coordinates[0];
+              let y = this.url.features[0].geometry.coordinates[1];
+              let sammenVegnr = this.vegnr.join(" ")
+              return "https://vegkart.atlas.vegvesen.no/#kartlag:geodata/@" + x + "," + y + ",8/hvor:~(vegsystemreferanse~(~'" + sammenVegnr + "))"
+            } catch (error) {
+              console.log(error, "Feil ved vegkarturl");
+              return "https://vegkart.atlas.vegvesen.no/#kartlag:geodata/@600000,7133139,3"
+            }
+          }
+        },
+
+        methods: {
+          velgerKat() {
+            this.bildeAktiv = false;
+          },
+
+          bildeLast() {
+            this.bildeLastet = true;
+            let ele = document.getElementById("vegbilde");
+
+            this.vinduDim = {
+              hoyde: this.$refs.veginfo.offsetHeight,
+              bredde: this.$refs.veginfo.offsetWidth,
+            }
+          },
+
+          toggleStortbilde() {
+            // this.toggle === "yes" ? this.toggle = "no" : this.toggle = "yes";
+            console.log();
+
+            if (!this.bildeviser) {
+              let viewer = new Viewer(
+                document.getElementById("viewerImage"), {
+                  inline: false,
+                  viewed() {
+                    viewer.zoomTo(0.35);
+                  },
+                  toolbar: {
+                    zoomIn: 1,
+                    zoomOut: 1,
+                    oneToOne: 1,
+                    reset: 0,
+                    prev: 0,
+                    play: {
+                      show: 0,
+                      size: "large",
+                    },
+                    next: 0,
+                    rotateLeft: 4,
+                    rotateRight: 4,
+                    flipHorizontal: 0,
+                    flipVertical: 0,
+                  },
+                  navbar: 0,
+                }
+              );
+
+              viewer.show();
+
+              this.bildeviser = viewer;
+            } else {
+              console.log(this.bildeviser);
+              this.bildeviser.url = this.bilde;
+              this.bildeviser.show();
+            }
+          },
+
+          copyClipboard() {
+            var elm = document.getElementById("vegnr");
+            // for Internet Explorer
+
+            if (document.body.createTextRange) {
+              var range = document.body.createTextRange();
+              range.moveToElementText(elm);
+              range.select();
+              document.execCommand("Copy");
+              alert("Copied div content to clipboard");
+            } else if (window.getSelection) {
+              // other browsers
+
+              var selection = window.getSelection();
+              var range = document.createRange();
+              range.selectNodeContents(elm);
+              selection.removeAllRanges();
+              selection.addRange(range);
+              document.execCommand("Copy");
+              this.animated = true;
+              selection.removeAllRanges();
+            }
+          }
+        },
+
+        mounted() {
+          const bilde = document.getElementById("viewerImage");
+          console.log(bilde, "Created");
+          console.log(this.$refs);
+        },
+
+        beforeDestroy() {
+          try {
+            this.bildeviser.destroy();
+          } catch (error) {
+            console.log(error);
+          }
+        },
+      });
+
+      function extentCalc(kartPkt, d) {
+        let x = kartPkt.x;
+        let y = kartPkt.y;
+
+        return [x - d, y - d, x + d, y + d];
+      }
+
+      function setMarker(kartpkt, retning) {
+        // First create a point geometry (this is the location of the Titanic)
+        var point = {
+          type: "point", // autocasts as new Point()
+          x: kartpkt.x,
+          y: kartpkt.y,
+          spatialReference: {
+            wkid: 25833,
+          },
+        };
+
+        // Create a symbol for drawing the point
+        var markerSymbol = {
+          type: "picture-marker",
+          url: "https://kart.skoiddlos.com/symbologi/pil.png",
+          width: 50,
+          height: 50,
+          angle: retning,
+        };
+
+        // Create a graphic and add the geometry and symbol to it
+        var pointGraphic = new Graphic({
+          geometry: point,
+          symbol: markerSymbol,
+        });
+
+        return pointGraphic;
+      }
+
+      //console.log(view, "Kartet");
+
+      view.ui.remove("attribution");
+
+      view.constraints = {
+        rotationEnabled: false,
+      };
+
+      view.when(function () {
+        const info = new Vue({
+          el: "#info",
+          data: {
+            url: {},
+          },
+          methods: {
+            hentBilde(url) {
+              fetch(url)
+                .then((response) => {
+                  // The response is a Response instance.
+                  // You parse the data into a useable format using `.json()`
+                  return response.json();
+                })
+                .then((response) => {
+                  //console.log(response.features);
+                  // `data` is the parsed version of the JSON returned from the above endpoint.
+                  let data = response;
+
+                  if (data.features.length !== 0) {
+                    let pkt = data.features[0].geometry.coordinates;
+                    let marker = setMarker({
+                        x: pkt[0],
+                        y: pkt[1],
+                      },
+                      data.features[0].properties.RETNING
+                    );
+                    view.graphics.add(marker);
+                    // console.log(
+                    //   data.features[0].properties.URL,
+                    //   "Url til vegbildet"
+                    // );
+
+                    let vegnr =
+                      data.features[0].properties.VEGKATEGORI +
+                      data.features[0].properties.VEGSTATUS +
+                      data.features[0].properties.VEGNUMMER;
+
+                    //Lagrer verdier
+                    this.url = data;
+                  } else {
+                    info.url = "";
+                  }
+                });
+            },
+          },
+        });
+
+        const searchWidget = new Search({
+          view: view,
+        });
+
+        view.ui.add(searchWidget, {
+          position: "top-right",
+          index: 2,
+        });
+
+        console.log(info, "Vue komponent");
+
+        view.ui.add(info.$el, "bottom-right");
+
+        view.on("click", function (event) {
+          info.$children[0].bildeLastet = false;
+          info.$children[0].bildeAktiv = true;
+          view.graphics.removeAll();
+
+          const mapScale = view.scale;
+
+          let extent;
+          let klikkAreal;
+
+          //Switch for å bestemme beste klikkAreal
+          switch (true) {
+            case mapScale < 4999:
+              klikkAreal = 2;
+              break;
+
+            case mapScale < 11000:
+              klikkAreal = 6;
+              break;
+
+            case mapScale < 25000:
+              klikkAreal = 15;
+              break;
+
+            case mapScale < 200000:
+              klikkAreal = 30;
+              break;
+
+            default:
+              break;
+          }
+
+          try {
+            extent = extentCalc(event.mapPoint, klikkAreal);
+          } catch (error) {
+            console.log(error),
+              "Feilmelding under beregning av klikkpkt extent";
+          }
+
+          let url =
+            "https://www.vegvesen.no/kart/ogc/vegbilder_1_0/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=vegbilder_1_0:Vegbilder_2020&STARTINDEX=0&COUNT=10&SRSNAME=urn:ogc:def:crs:EPSG::25833&BBOX=" +
+            extent.join(",") +
+            ",urn:ogc:def:crs:EPSG::25833&outputFormat=application/json";
+
+          info.hentBilde(url);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="info" class="esri-widget">
+    <camera-info :url="url"> </camera-info>
   </div>
-</div>
-</div>
+  <div id="viewDiv"></div>
+  <a :href="vegkartUrl" target="#"></a>
+</body>
+
+</html>
