@@ -18,6 +18,10 @@
       width: 100%;
     }
 
+    #viewDiv {
+      cursor: pointer;
+    }
+
     :focus {
       outline: none !important;
     }
@@ -130,6 +134,11 @@
 	 -webkit-transition: .1s ease-in-out;
 	 transition: .1s ease-in-out;
 
+    }
+
+    .ikon {
+      border-radius: 8px;
+      margin: 4px;
     }
 	
 	.blur {
@@ -304,7 +313,7 @@
           '    <div class="col-sm-12 col-md-12 col-lg-12">',
           '      <div class="vegnummer">',
           '        <h2 id="vegnr">{{vegnr}}</h2><button class="btn" type="button" @click="copyClipboard">',
-          '          <img :class="{clippy: animated}" src="https://clipboardjs.com/assets/images/clippy.svg" width="20"',
+          '          <img :class="{clippy: animated}" class="ikon" src="https://clipboardjs.com/assets/images/clippy.svg" width="20"',
           '            alt="Copy to clipboard" @animationend="animated = false">',
           '        </button>',
           '      </div>',
@@ -323,8 +332,9 @@
           '    </div>',
           '    <div id="veginfo" :style="vinduDim" v-else>',
 
-          '        <h3>Lenke til vegkart</h3>',
-          '        <h3>Enda mer metadata</h3>',
+          '       <a :href="vegkartUrl" target="#"><h3>Lenke til vegkart</h3></a>',
+          '        <a :href="norgeskartUrl" target="#"><h3>Lenke til Norgeskart.no</h3></a>',
+          '        <h3>..........</h3>',
           '        <h3>Et eller annja</h3>',
           '    </div>',
           '  </div>',
@@ -387,6 +397,33 @@
               return "";
             }
           },
+
+          vegkartUrl: function () {
+            try {
+              let x = this.url.features[0].geometry.coordinates[0];
+              let y = this.url.features[0].geometry.coordinates[1];
+              let sammenVegnr = this.vegnr.replace(/\s+/g, '')
+              return "https://vegkart.atlas.vegvesen.no/#kartlag:geodata/@" + x + "," + y + ",15/hvor:~(vegsystemreferanse~(~'" + sammenVegnr + "))"
+            } catch (error) {
+              console.log(error, "Feil ved vegkarturl");
+              return "https://vegkart.atlas.vegvesen.no/#kartlag:geodata/@600000,7133139,3"
+            }
+          },
+
+          norgeskartUrl: function () {
+            try {
+              let x = this.url.features[0].geometry.coordinates[0];
+              let y = this.url.features[0].geometry.coordinates[1];
+              let url = "https://norgeskart.no/#!?project=seeiendom&layers=1002,1013,1014,1015&zoom=16&lat=" + y + "&lon=" + x + "&markerLat=" + y + "&markerLon=" + x + "&panel=searchOptionsPanel";
+              console.log(url, "Norgeskart-url");
+              return url
+            } catch (error) {
+              console.log(error, "Feil ved norgeskart-url");
+              return "https://norgeskart.no/#!?project=seeiendom&layers=1002,1013,1014,1015&zoom=4&lat=7197864.00&lon=396722.00"
+            }
+
+
+          }
         },
 
         methods: {
@@ -544,11 +581,17 @@
                   return response.json();
                 })
                 .then((response) => {
+                  function isEven(value) {
+                    return (value%2 == 0);
+                    }
+                  console.log(parseInt(response.features[0].properties.FELTKODE));
+                  console.log(isEven(parseInt(response.features[0].properties.FELTKODE)));
                   //console.log(response.features);
                   // `data` is the parsed version of the JSON returned from the above endpoint.
                   let data = response;
 
                   if (data.features.length !== 0) {
+                    
                     let pkt = data.features[0].geometry.coordinates;
                     let marker = setMarker({
                         x: pkt[0],
@@ -589,6 +632,10 @@
         console.log(info, "Vue komponent");
 
         view.ui.add(info.$el, "bottom-right");
+
+        view.on("mouse-wheel", function (event) {
+          console.log(event);
+        })
 
         view.on("click", function (event) {
           info.$children[0].bildeLastet = false;
@@ -645,6 +692,7 @@
   <div id="info" class="esri-widget">
     <camera-info :url="url"> </camera-info>
   </div>
+  
   <div id="viewDiv"></div>
 </body>
 

@@ -1,0 +1,2228 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.29.630265_EV00006_S120D1_m00028",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.55806594, 66.05603361]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:29Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 28.345808406518103,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5674710435598512,
+            "RETNING": 58.484719546800235,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00028_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.33.370264_EV00006_S120D1_m00048",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.55845617, 66.05611573]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:33Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 48.3775989029245,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5698661495216657,
+            "RETNING": 62.0349830000726,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00048_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.34.812296_EV00006_S120D1_m00068",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.55885584, 66.05618757]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:34Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 68.2871892116231,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5722466445879555,
+            "RETNING": 65.25087335346976,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00068_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.36.026293_EV00006_S120D1_m00088",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.55926684, 66.05625101]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:36Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 88.2385572607156,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5746321348200597,
+            "RETNING": 68.41747909246885,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00088_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.37.184287_EV00006_S120D1_m00108",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.55968288, 66.05630879]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:37Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 108.2179717857194,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5770209784359603,
+            "RETNING": 70.39952601322956,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00108_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.38.318264_EV00006_S120D1_m00128",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56010287, 66.05636473]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:38Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 128.2585119375187,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5794171305524757,
+            "RETNING": 71.33655756984959,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00128_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.39.422264_EV00006_S120D1_m00148",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56052147, 66.05641902]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:39Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 148.20406711432923,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5818019257670746,
+            "RETNING": 71.92141579186149,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00148_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.40.508264_EV00006_S120D1_m00168",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56094187, 66.05647201]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:40Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 168.12519648085262,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5841838005036537,
+            "RETNING": 72.37094798859648,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00168_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.41.590296_EV00006_S120D1_m00188",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56136416, 66.05652644]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:41Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 188.15325675497172,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5865784604605221,
+            "RETNING": 72.11059460480068,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00188_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.42.652291_EV00006_S120D1_m00208",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56178113, 66.05658059]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:42Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 208.00842718993204,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5889524488012121,
+            "RETNING": 72.06258205123108,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00208_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.43.726262_EV00006_S120D1_m00228",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56220452, 66.05663527]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:43Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 228.0298794667388,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5913463186712552,
+            "RETNING": 72.1302794525693,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00228_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.44.776294_EV00006_S120D1_m00248",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56261997, 66.05669033]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:44Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 247.8514812205456,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5937162933643197,
+            "RETNING": 71.77576699144433,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00248_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.45.832294_EV00006_S120D1_m00268",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56303943, 66.05674607]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:45Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 267.9234258850916,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.5961162003691323,
+            "RETNING": 71.69276597000889,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00268_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.46.880286_EV00006_S120D1_m00288",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56345772, 66.05680138]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:46Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 287.82293877163954,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.598495490525962,
+            "RETNING": 71.68121516872048,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00288_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.47.930277_EV00006_S120D1_m00308",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56387858, 66.05685649]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:47Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 307.81653828708636,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6008860301737368,
+            "RETNING": 71.79489523176076,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00308_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.48.974262_EV00006_S120D1_m00328",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.5642988, 66.0569099]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:48Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 327.7776148969742,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6032726812123024,
+            "RETNING": 72.24208074323566,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00328_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.50.012262_EV00006_S120D1_m00348",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56471719, 66.05696322]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:50Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 347.7154767582635,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6056565565737371,
+            "RETNING": 72.24148189507783,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00348_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.51.062285_EV00006_S120D1_m00368",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56514049, 66.05701599]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:51Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 367.7766258184766,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6080551727994601,
+            "RETNING": 72.59030691457068,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00368_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.52.108290_EV00006_S120D1_m00388",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56556021, 66.05707008]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:52Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 387.7530957515136,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6104436643444973,
+            "RETNING": 72.19461061111741,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00388_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.53.146260_EV00006_S120D1_m00407",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56597701, 66.0571233]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:53Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 407.4011792340621,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6127928922827448,
+            "RETNING": 72.29133766956494,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00407_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.54.202290_EV00006_S120D1_m00428",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56640182, 66.05717609]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:54Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 427.5638686175824,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6152036492022197,
+            "RETNING": 72.69287387796103,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00428_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.55.254289_EV00006_S120D1_m00448",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56682796, 66.05722386]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:55Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 447.6274977299842,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6176025619559932,
+            "RETNING": 74.13844388207929,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00448_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.56.292283_EV00006_S120D1_m00467",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56725196, 66.05726509]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:56Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 467.42850115723024,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6199700738050719,
+            "RETNING": 76.13863891249751,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00467_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.57.344261_EV00006_S120D1_m00487",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.5676855, 66.05729476]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:57Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 487.3985006372147,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.622357791708797,
+            "RETNING": 79.7964144764146,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00487_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.58.406291_EV00006_S120D1_m00507",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56812432, 66.05731367]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:58Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 507.43295843249257,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6247532165868577,
+            "RETNING": 83.17405789565123,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00507_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.48.59.474261_EV00006_S120D1_m00527",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56856503, 66.05732351]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:48:59Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 527.4146190230953,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6271423287541444,
+            "RETNING": 85.94766396292862,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00527_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.00.536261_EV00006_S120D1_m00547",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56900406, 66.05732426]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:00Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 547.372262961569,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6295285693645074,
+            "RETNING": 88.95455479686098,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00547_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.01.598260_EV00006_S120D1_m00567",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56944262, 66.05731327]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:01Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 567.2142516415339,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6319009816254166,
+            "RETNING": 92.81194050551304,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00567_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.02.648289_EV00006_S120D1_m00587",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.56987475, 66.05728741]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:02Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 587.1743299297194,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.0320452684247432,
+            "RETNING": 97.3068104244301,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00587_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.03.700258_EV00006_S120D1_m00607",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57030501, 66.05724991]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:03Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 607.2170318066704,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.08158687721484763,
+            "RETNING": 101.1113682950819,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00607_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.04.744289_EV00006_S120D1_m00627",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.5707286, 66.05720299]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:04Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 627.0892224047037,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.13070701572982127,
+            "RETNING": 104.29021088127533,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00627_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.05.790260_EV00006_S120D1_m00647",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57114809, 66.05714654]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:05Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 647.0843290265367,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.18013097842990253,
+            "RETNING": 107.50839617572527,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00647_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.06.822288_EV00006_S120D1_m00667",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57155442, 66.05708175]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:06Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 666.8209631918098,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.2289160481601377,
+            "RETNING": 110.67770045124443,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00667_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.07.864287_EV00006_S120D1_m00687",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57195588, 66.05700664]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:07Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 687.062051190542,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.27894802834303173,
+            "RETNING": 113.87100702718975,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00687_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.08.896289_EV00006_S120D1_m00707",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57234625, 66.05692442]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:08Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 706.9370496780278,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.32807510740732054,
+            "RETNING": 116.65993858637783,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00707_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.09.928257_EV00006_S120D1_m00727",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57272569, 66.05683459]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:09Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 726.8672978802047,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.3773387528770664,
+            "RETNING": 119.72144708160492,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00727_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.10.974293_EV00006_S120D1_m00747",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57309521, 66.05673588]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:10Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 746.8744901815071,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.4267925889948094,
+            "RETNING": 122.74214828751558,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00747_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.12.018286_EV00006_S120D1_m00767",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57344852, 66.0566297]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:12Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 766.8894100143617,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.47626552604751715,
+            "RETNING": 125.87690165591157,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00767_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.13.064287_EV00006_S120D1_m00787",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57378604, 66.05651507]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:13Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 786.848198002875,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.5255997162441326,
+            "RETNING": 129.2498655425117,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00787_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.14.108258_EV00006_S120D1_m00807",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57410931, 66.05639388]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:14Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 806.7879705191104,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.5748869039410683,
+            "RETNING": 132.08251860369663,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00807_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.15.154289_EV00006_S120D1_m00827",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57442273, 66.05626889]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:15Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 826.746063070318,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.6242193751537287,
+            "RETNING": 133.6668292834695,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00827_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.16.198286_EV00006_S120D1_m00847",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.5747339, 66.05614333]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:16Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 846.7397764028583,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.6736398939172843,
+            "RETNING": 134.12849563586002,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00847_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.17.242257_EV00006_S120D1_m00867",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57504782, 66.05601816]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:17Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 866.5208314234843,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.7225347632469709,
+            "RETNING": 134.23119672165754,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00867_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.18.286286_EV00006_S120D1_m00886",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57536034, 66.05589177]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:18Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 886.4759304474944,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.7718598350503986,
+            "RETNING": 134.5415079821577,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00886_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.19.324285_EV00006_S120D1_m00906",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57567145, 66.05576564]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:19Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 906.4009293249387,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.8211105052240039,
+            "RETNING": 134.66236929923096,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00906_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.20.368294_EV00006_S120D1_m00926",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57598486, 66.05563858]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:20Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 926.4221042605506,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.8705989036578988,
+            "RETNING": 134.72365341230446,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00926_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.21.406285_EV00006_S120D1_m00946",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57629568, 66.05551202]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:21Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 946.3962720965226,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.9199711098061922,
+            "RETNING": 134.80232488897303,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00946_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.22.456279_EV00006_S120D1_m00967",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57660843, 66.05538387]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:22Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 966.5108445917531,
+            "FELTKODE": "1",
+            "REFLINKID": 2212814,
+            "REFLINKPOSISJON": 0.9696903685995829,
+            "RETNING": 134.93624809547595,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00967_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.23.490257_EV00006_S120D1_m00986",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57691496, 66.05525769]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:23Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 986.1735797973497,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6820482533940833,
+            "RETNING": 135.1498451431626,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m00986_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.24.540279_EV00006_S120D1_m01006",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57722205, 66.05512841]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:24Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1006.2071321533841,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6844450351870998,
+            "RETNING": 135.71912040888176,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01006_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.25.584286_EV00006_S120D1_m01026",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57752515, 66.05499946]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:25Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1026.2547461416339,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.686843499291045,
+            "RETNING": 136.1045759693067,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01026_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.26.640285_EV00006_S120D1_m01046",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57783115, 66.05486923]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:26Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1046.3172094475274,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6892437399433298,
+            "RETNING": 136.13883486014888,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01046_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.27.684285_EV00006_S120D1_m01066",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57813327, 66.05473989]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:27Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1066.2191008562595,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6916247700336158,
+            "RETNING": 136.30637270897347,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01066_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.28.716285_EV00006_S120D1_m01086",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57843393, 66.05461153]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:28Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1085.9772900057364,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6939886078180902,
+            "RETNING": 136.19522764515654,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01086_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.29.754284_EV00006_S120D1_m01106",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57873751, 66.0544814]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:29Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1106.0916403282176,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6963950561490951,
+            "RETNING": 136.2849821691752,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01106_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.30.786255_EV00006_S120D1_m01126",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57904023, 66.0543518]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:30Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1125.9022073238928,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.6987651603343504,
+            "RETNING": 136.22950120067713,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01126_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.31.818284_EV00006_S120D1_m01146",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57934366, 66.05422188]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:31Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1145.9418743887493,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7011626736812377,
+            "RETNING": 136.24092972698637,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01146_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.32.850254_EV00006_S120D1_m01166",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57964727, 66.05409194]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:32Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1165.959797535226,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7035575856209081,
+            "RETNING": 136.25630761519494,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01166_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.33.870254_EV00006_S120D1_m01186",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57994812, 66.05396357]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:33Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1185.801868462811,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.705931458885609,
+            "RETNING": 136.19328410497198,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01186_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.34.902281_EV00006_S120D1_m01206",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58025161, 66.05383327]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:34Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1205.7278076578032,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7083153660141381,
+            "RETNING": 136.34267794162713,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01206_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.35.942276_EV00006_S120D1_m01226",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58055749, 66.05370202]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:35Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1225.9129811196456,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7107302875109565,
+            "RETNING": 136.24372531526947,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01226_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.36.964253_EV00006_S120D1_m01246",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58085967, 66.05357379]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:36Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1245.8038055215911,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7131099935624551,
+            "RETNING": 136.02553692140782,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01246_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.37.990282_EV00006_S120D1_m01266",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58116359, 66.05344547]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:37Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1265.7000410078806,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7154903469873305,
+            "RETNING": 135.8678435610314,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01266_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.39.022281_EV00006_S120D1_m01286",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58147118, 66.05331764]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:39Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1285.7075558643926,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7178840136960283,
+            "RETNING": 135.52490703935797,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01286_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.40.052281_EV00006_S120D1_m01306",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58178214, 66.05319195]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:40Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1305.5299439831558,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7202555321413252,
+            "RETNING": 134.7109800844351,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01306_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.41.096253_EV00006_S120D1_m01326",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58210333, 66.05306792]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:41Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1325.5904565370106,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7226555394087919,
+            "RETNING": 133.62378408187004,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01326_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.42.124253_EV00006_S120D1_m01346",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58242612, 66.05294796]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:42Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1345.5310097843499,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7250411949389007,
+            "RETNING": 132.5097405053333,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01346_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.43.158287_EV00006_S120D1_m01365",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58275801, 66.05282974]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:43Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1365.499143064014,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7274301500994571,
+            "RETNING": 131.13911152741562,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01365_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-17T12.49.44.190344_EV00006_S120D1_m01386",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.58309743, 66.05271567]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-17T10:49:44Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "E",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 6,
+            "STREKNING": 120,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 1385.5132345243821,
+            "FELTKODE": "1",
+            "REFLINKID": 885913,
+            "REFLINKPOSISJON": 0.7298246036224005,
+            "RETNING": 129.61663389438573,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/EV00006/S120/D1/F1_2020_08_17/EV00006_S120D1_m01386_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.40.332686_FV07316_S1D1_m00020",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57480149, 66.05641728]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:40Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 19.515834249107577,
+            "FELTKODE": "1",
+            "REFLINKID": 2212818,
+            "REFLINKPOSISJON": 0.4937637390165076,
+            "RETNING": 33.88310278116838,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00020_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.44.971039_FV07316_S1D1_m00039",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57495641, 66.05658268]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:44Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 39.38362423600274,
+            "FELTKODE": "1",
+            "REFLINKID": 2212818,
+            "REFLINKPOSISJON": 0.8842036070760769,
+            "RETNING": 13.758624151728705,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00039_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.47.437606_FV07316_S1D1_m00060",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57464536, 66.05674134]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:47Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 59.53235508305071,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.00813280886936063,
+            "RETNING": 322.89295941679603,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00060_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.49.625389_FV07316_S1D1_m00079",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57418403, 66.05679396]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:49Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 79.3841273695721,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.010838114819630387,
+            "RETNING": 292.0417621867064,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00079_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.51.478316_FV07316_S1D1_m00099",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57378716, 66.05687028]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:51Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 99.31557508528621,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.013554278561817885,
+            "RETNING": 295.94164743423926,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00099_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.53.140736_FV07316_S1D1_m00119",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57343791, 66.05697899]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:53Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 119.154468008077,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.016257829373108955,
+            "RETNING": 306.1953422436916,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00119_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.54.662782_FV07316_S1D1_m00139",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57316323, 66.05711728]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:54Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 138.8937662630394,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.01894780789253598,
+            "RETNING": 319.2467260572626,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00139_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.56.112637_FV07316_S1D1_m00159",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.5729766, 66.05727938]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:56Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 158.7351264760606,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.021651694934509382,
+            "RETNING": 333.04763711190196,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00159_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.57.508348_FV07316_S1D1_m00179",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57287076, 66.0574523]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:57Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 178.62858746346905,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.02436268202442456,
+            "RETNING": 344.2554751978901,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00179_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.01.58.898044_FV07316_S1D1_m00199",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57280196, 66.0576302]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:01:58Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 198.57945117703002,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.027081491687275833,
+            "RETNING": 349.7629717492247,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00199_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.02.00.241614_FV07316_S1D1_m00218",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57274594, 66.05780687]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:02:00Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 218.40324321319918,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.029782984620920407,
+            "RETNING": 351.8025697143612,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00218_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.02.01.573155_FV07316_S1D1_m00238",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57268376, 66.05798454]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:02:01Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 238.339451138854,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.032499797062080026,
+            "RETNING": 351.5825216231089,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00238_f1.jpg"
+        }
+    }, {
+        "type": "Feature",
+        "id": "Vegbilder_2020.2020-08-29T07.02.02.872610_FV07316_S1D1_m00258",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.57262066, 66.05816095]
+        },
+        "geometry_name": "POSISJON",
+        "properties": {
+            "AAR": 2020,
+            "TIDSPUNKT": "2020-08-29T05:02:02Z",
+            "FYLKENUMMER": 18,
+            "VEGKATEGORI": "F",
+            "VEGSTATUS": "V",
+            "VEGNUMMER": 7316,
+            "STREKNING": 1,
+            "DELSTREKNING": 1,
+            "ANKERPUNKT": null,
+            "KRYSSDEL": null,
+            "SIDEANLEGGSDEL": null,
+            "METER": 258.17513340742477,
+            "FELTKODE": "1",
+            "REFLINKID": 885509,
+            "REFLINKPOSISJON": 0.035202910340548316,
+            "RETNING": 351.5473924448154,
+            "URL": "https://www.utv.vegvesen.no/Vegbilder/2020/FV07316/S1/D1/F1_2020_08_29/FV07316_S1D1_m00258_f1.jpg"
+        }
+    }],
+    "totalFeatures": 82,
+    "numberMatched": 82,
+    "numberReturned": 82,
+    "timeStamp": "2020-09-28T12:22:25.124Z",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    }
+}

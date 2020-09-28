@@ -319,6 +319,7 @@
 
                   // Sjekker om response inneholder data
                   if (data.features.length !== 0) {
+                    console.log(response);
                     let pkt = data.features[0].geometry.coordinates;
                     let marker = setMarker({
                         x: pkt[0],
